@@ -38,10 +38,10 @@ foreach($results as $row)
       
             <li class="nav-item dropdown d-none d-xl-inline-flex user-dropdown">
               <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-              <img class="img-xs rounded-circle ml-2" src="../admin/images/<?php echo $row->Image;?>"><span class="font-weight-normal"> <?php  echo htmlentities($row->StudentName);?> </span></a>
+              <img class="img-xs rounded-circle ml-2" src="/admin/images/<?php echo $row->Image;?>"><span class="font-weight-normal"> <?php  echo htmlentities($row->StudentName);?> </span></a>
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                 <div class="dropdown-header text-center">
-                <img class="img-xs rounded-circle ml-2" src="../admin/images/<?php echo $row->Image;?>">
+                <img class="img-xs rounded-circle ml-2" src="/admin/images/<?php echo $row->Image;?>">
                 <img class="yown" src="/images/bluelogo.png"  alt="" style="left: 10px; ">
                   <p class="mb-1 mt-3"><?php  echo htmlentities($row->StudentName);?></p>
                   <p class="font-weight-light text-muted mb-0"><?php  echo htmlentities($row->StudentEmail);?></p><?php $cnt=$cnt+1;}} ?>
