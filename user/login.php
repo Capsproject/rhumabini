@@ -10,7 +10,7 @@ if(isset($_POST['login']))
     $sql ="SELECT StuID,ID,StudentClass FROM tblstudent WHERE (UserName=:stuid || StuID=:stuid) and Password=:password";
     $query=$dbh->prepare($sql);
     $query-> bindParam(':stuid', $stuid, PDO::PARAM_STR);
-$query-> bindParam(':password', $password, PDO::PARAM_STR);
+    $query-> bindParam(':password', $password, PDO::PARAM_STR);
     $query-> execute();
     $results=$query->fetchAll(PDO::FETCH_OBJ);
     if($query->rowCount() > 0)
@@ -68,7 +68,7 @@ echo "<script>alert('Invalid Details');</script>";
             <div class="col-lg-4 mx-auto">
               <div class="auth-form-light text-left p-5">
                 <div class="brand-logo">
-                  <img src="/images/download.jpg"> 
+                  <img src="/rural/images/download.jpg"> 
                 </div>
               
                 <h6 class="font-weight-light">Sign in to continue.</h6>

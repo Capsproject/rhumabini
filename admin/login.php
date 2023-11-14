@@ -1,16 +1,16 @@
 <?php
 session_start();
 error_reporting(0);
-include('/admin/includes/dbconnection.php');
+include('includes/dbconnection.php');
 
 if(isset($_POST['login'])) 
   {
     $username=$_POST['username'];
     $password=md5($_POST['password']);
-    $sql ="SELECT ID FROM tbladmin WHERE UserName=:$username and Password=:$password";
+    $sql ="SELECT ID FROM tbladmin WHERE UserName=:username and Password=:password";
     $query=$dbh->prepare($sql);
     $query-> bindParam(':username', $username, PDO::PARAM_STR);
-    $query-> bindParam(':password', $password, PDO::PARAM_STR);
+$query-> bindParam(':password', $password, PDO::PARAM_STR);
     $query-> execute();
     $results=$query->fetchAll(PDO::FETCH_OBJ);
     var_dump($results);
@@ -34,7 +34,7 @@ setcookie ("userpassword","");
       }
 }
 $_SESSION['login']=$_POST['username'];
-echo "<script type='text/javascript'> document.location ='admin/dashboard.php'; </script>";
+echo "<script type='text/javascript'> document.location ='dashboard.php'; </script>";
 } else{
 echo "<script>alert('Invalid Details');</script>";
 }
@@ -67,11 +67,11 @@ echo "<script>alert('Invalid Details');</script>";
             <div class="col-lg-4 mx-auto">
               <div class="auth-form-light text-left p-5">
                 <div class="brand-logo">
-                <img src="/images/download.jpg"> 
+                <img src="/rural/images/download.jpg"> 
                 </div>
                 <h4>ADMIN</h4>
                 <h6 class="font-weight-light">Sign in to continue.</h6>
-                <form class="pt-3" action="login.php" id="login" method="post" name="login">
+                <form class="pt-3" id="login" method="post" name="login">
                   <div class="form-group">
                     <input type="text" class="form-control form-control-lg" placeholder="enter your username" required="true" name="username" value="<?php if(isset($_COOKIE["user_login"])) { echo $_COOKIE["user_login"]; } ?>" >
                   </div>

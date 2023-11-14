@@ -1,9 +1,9 @@
 <?php 
 // DB credentials.
 define('DB_HOST','localhost');
-define('DB_USER','u801089727_ruraldb');
-define('DB_PASS','Ruraldb123');
-define('DB_NAME','u801089727_ruraldb');
+define('DB_USER','root');
+define('DB_PASS','');
+define('DB_NAME','ruraldb');
 // Establish database connection.
 try
 {
