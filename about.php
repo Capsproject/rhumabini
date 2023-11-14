@@ -49,7 +49,7 @@ include('includes/dbconnection.php');
 		 <div class="about-info-grids">
 		 <h2>About</h2>
 			 <div class="col-md-5 abt-pic">
-				 <img src="/rural/images/wiw.jpg" class="img-responsive" alt=""/>
+				 <img src="/plugin/images/wiw.jpg" class="img-responsive" alt=""/>
 			 </div>
 			 <div class="container">
 			<p>MABINI RURAL HEALTH UNIT is a government owned health center located in Mabini, Batangas We provide comprehensive medical and dental services to the residents of Mabini and nearby barangays. Our team of doctors are committed to providing quality care to all patients who come through our doors.</p>
@@ -150,7 +150,7 @@ img {
       <h3>Designer</h3>
       <p>I design stuff.</p>
     </div>
-    <img src="/rural/images/espinosa.png" alt="">
+    <img src="/plugin/images/espinosa.png" alt="">
     <figcaption>
       <h3>Dereck William Espinosa</h3>
 	  <span class="deg">Developer</span>
@@ -166,7 +166,7 @@ img {
       <h3>Coder</h3>
       <p>I code it all.</p>
     </div>
-    <img src="/rural/images/mendoza.png" alt="">
+    <img src="/plugin/images/mendoza.png" alt="">
     <figcaption>
       <h3>Haecjam Mendoza</h3>
 	  <span class="deg">Documentation</span>
@@ -182,7 +182,7 @@ img {
       <h3>Intern</h3>
       <p>I make their coffee.</p>
     </div>
-    <img src="/rural/images/aje.png" alt="">
+    <img src="/plugin/images/aje.png" alt="">
     <figcaption>
       <h3>Carl Aejemarc Asilo</h3>
 	  <span class="deg">Assistant Developer</span>
