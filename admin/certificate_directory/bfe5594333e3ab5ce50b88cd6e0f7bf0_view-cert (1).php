@@ -55,7 +55,7 @@
                 <div class="navbar-menu-wrapper d-flex align-items-center flex-grow-1">
               
   
-        <img class="yown" src="/rural/images/bluelogo.png"  alt="" style="left: 10px; ">
+        <img class="yown" src="/images/bluelogo.png"  alt="" style="left: 10px; ">
          
           <ul class="navbar-nav navbar-nav-right ml-auto">
        
@@ -66,7 +66,7 @@
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                 <div class="dropdown-header text-center">
                 <img class="img-xs rounded-circle ml-2" src="../admin/images/fefbd421431dfb07c63c7e71ac7c7a5d1699310710.jpg">
-                <img class="yown" src="/rural/images/bluelogo.png"  alt="" style="left: 10px; ">
+                <img class="yown" src="/images/bluelogo.png"  alt="" style="left: 10px; ">
                   <p class="mb-1 mt-3">haec mendoza</p>
                   <p class="font-weight-light text-muted mb-0">haecmendoza@gmail.com</p>                </div>
                 <a class="dropdown-item" href="patient-profile.php"><i class="dropdown-item-icon icon-user text-primary"></i> My Profile</a>

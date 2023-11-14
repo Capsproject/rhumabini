@@ -68,7 +68,7 @@ echo "<script>alert('Invalid Details');</script>";
             <div class="col-lg-4 mx-auto">
               <div class="auth-form-light text-left p-5">
                 <div class="brand-logo">
-                  <img src="/rural/images/download.jpg"> 
+                  <img src="/images/download.jpg"> 
                 </div>
               
                 <h6 class="font-weight-light">Sign in to continue.</h6>
