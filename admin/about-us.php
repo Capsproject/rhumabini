@@ -71,15 +71,15 @@ echo '<script>alert("About us has been updated")</script>';
                     <form class="forms-sample" method="post">
                       <?php
 
-$sql="SELECT * from  tblpage where PageType='aboutus'";
-$query = $dbh -> prepare($sql);
-$query->execute();
-$results=$query->fetchAll(PDO::FETCH_OBJ);
-$cnt=1;
-if($query->rowCount() > 0)
-{
-foreach($results as $row)
-{               ?>      
+                      $sql="SELECT * from  tblpage where PageType='aboutus'";
+                      $query = $dbh -> prepare($sql);
+                      $query->execute();
+                      $results=$query->fetchAll(PDO::FETCH_OBJ);
+                      $cnt=1;
+                      if($query->rowCount() > 0)
+                      {
+                      foreach($results as $row)
+                      {?>      
                       <div class="form-group">
                         <label for="exampleInputName1">Page Title:</label>
                         <input type="text" name="pagetitle" value="<?php  echo $row->PageTitle;?>" class="form-control" required='true'>

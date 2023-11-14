@@ -7,12 +7,13 @@ if(isset($_POST['login']))
   {
     $username=$_POST['username'];
     $password=md5($_POST['password']);
-    $sql ="SELECT ID FROM tbladmin WHERE UserName=:username and Password=:password";
+    $sql ="SELECT ID FROM tbladmin WHERE UserName=:$username and Password=:$password";
     $query=$dbh->prepare($sql);
     $query-> bindParam(':username', $username, PDO::PARAM_STR);
-$query-> bindParam(':password', $password, PDO::PARAM_STR);
+    $query-> bindParam(':password', $password, PDO::PARAM_STR);
     $query-> execute();
     $results=$query->fetchAll(PDO::FETCH_OBJ);
+    var_dump($results);
     if($query->rowCount() > 0)
 {
 foreach ($results as $result) {
