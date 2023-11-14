@@ -13,7 +13,7 @@
           
           <!-- Brand and toggle get grouped for better mobile display -->
 
-          <img class="yown" src="/rural/images/bluelogo.png"  alt="" style="left: 10px; ">
+          <img class="yown" src="/images/bluelogo.png"  alt="" style="left: 10px; ">
           <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -30,7 +30,7 @@
                
           
                 
-                <li><a href="/rural/user/login.php"><span data-hover="Shortcodes">Patient</span></a></li>
+                <li><a href="/user/login.php"><span data-hover="Shortcodes">Patient</span></a></li>
                 <li><a href="contact.php"><span data-hover="Contact">Contact</span></a></li>
                 <li><a href="about.php"><span data-hover="About">About</span></a></li>
                 <li><a href="index.php"><span data-hover="Home">Home</span></a></li>
