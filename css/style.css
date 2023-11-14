@@ -1648,7 +1648,7 @@ ul.p_n-list li a:hover{
 	    margin-top: 1em;
 	}
 	.banner5 {
-	    min-height: 83px;
+	    height: 100vh;
 	}
 	.welcome-grid {
 	    width: 50%;
