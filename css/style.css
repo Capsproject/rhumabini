@@ -224,7 +224,8 @@ span.glyphicon.glyphicon-search.edit {
 .banner {
     background: url(../images/yw.png);
     background-size: cover;
-    min-height: 1190px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     padding-top: 0em !important;
     text-align: center;
 }
