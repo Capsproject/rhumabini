@@ -70,7 +70,7 @@ echo "<script>alert('Invalid Details');</script>";
                 <div class="brand-logo">
                   <img src="/rural/images/download.jpg"> 
                 </div>
-                <h4>Hello! let's get started</h4>
+              
                 <h6 class="font-weight-light">Sign in to continue.</h6>
                 <form class="pt-3" id="login" method="post" name="login">
                   <div class="form-group">

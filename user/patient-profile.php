@@ -66,7 +66,7 @@ if($query->rowCount() > 0)
 {
 foreach($results as $row)
 {               ?>
- <tr align="center" class="table-warning">
+ <tr align="center" class="table-primary">
 <td colspan="4" style="font-size:20px;color:blue">
  Patient Details</td></tr>
 
@@ -76,31 +76,31 @@ foreach($results as $row)
      <th>Patient Email</th>
     <td><?php  echo $row->StudentEmail;?></td>
   </tr>
-  <tr class="table-warning">
+  <tr class="table-info" >
      <th>Patient Immunization Vaccine</th>
     <td><?php  echo $row->ClassName;?> <?php  echo $row->Section;?></td>
      <th>Gender</th>
     <td><?php  echo $row->Gender;?></td>
   </tr>
-  <tr class="table-danger">
+  <tr class="table-info">
     <th>Date of Birth</th>
     <td><?php  echo $row->DOB;?></td>
     <th>Doses</th>
     <td><?php  echo $row->StuID;?></td>
   </tr>
-  <tr class="table-success">
+  <tr class="table-info">
     <th>Father Name</th>
     <td><?php  echo $row->FatherName;?></td>
     <th>Mother Name</th>
     <td><?php  echo $row->MotherName;?></td>
   </tr>
-  <tr class="table-primary">
+  <tr class="table-info">
     <th>Contact Number</th>
     <td><?php  echo $row->ContactNumber;?></td>
     <th>Address</th>
     <td><?php  echo $row->Address;?></td>
   </tr>
-  <tr class="table-progress">
+  <tr class="table-info">
   
     <th>User Name</th>
     <td><?php  echo $row->UserName;?></td>

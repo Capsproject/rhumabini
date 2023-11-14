@@ -36,17 +36,7 @@ foreach($results as $row)
                 <i class="icon-screen-desktop menu-icon"></i>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Add-notice-title.php">
-                <span class="menu-title">Add-notice-title.php</span>
-                <i class="icon-screen-desktop menu-icon"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="manage-notice-title.php">
-                <span class="menu-title">manage-notice-title.php</span>
-                <i class="icon-screen-desktop menu-icon"></i>
-              </a>
+           
             </li>
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic1" aria-expanded="false" aria-controls="ui-basic1">

@@ -3290,7 +3290,7 @@ pre {
 .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: #212529; }
+  color: #000000; }
   .table th,
   .table td {
     padding: 0.9375rem;
@@ -3382,19 +3382,19 @@ pre {
 .table-info,
 .table-info > th,
 .table-info > td {
-  background-color: #dfc6f9; }
+  background-color: rgb(255, 255, 255); }
 
 .table-info th,
 .table-info td,
 .table-info thead th,
 .table-info tbody + tbody {
-  border-color: #c494f4; }
+  border-color: #000000; }
 
 .table-hover .table-info:hover {
-  background-color: #d2aff7; }
+  background-color: #ffffff; }
   .table-hover .table-info:hover > td,
   .table-hover .table-info:hover > th {
-    background-color: #d2aff7; }
+    background-color: #f9f9f9; }
 
 .table-warning,
 .table-warning > th,

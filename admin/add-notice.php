@@ -10,6 +10,7 @@ if (strlen($_SESSION['sturecmsaid']==0)) {
  $nottitle=$_POST['nottitle'];
  $classid=$_POST['classid'];
  $notmsg=$_POST['notmsg'];
+ 
 $sql="insert into tblnotice(NoticeTitle,ClassId,NoticeMsg)values(:nottitle,:classid,:notmsg)";
 $query=$dbh->prepare($sql);
 $query->bindParam(':nottitle',$nottitle,PDO::PARAM_STR);
@@ -69,7 +70,7 @@ echo "<script>window.location.href ='add-notice.php'</script>";
             </div>
             <div class="row">
           
-              <div class="col-12 grid-margin stretch-card">
+            <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title" style="text-align: center;">Add Notice</h4>
@@ -84,7 +85,7 @@ echo "<script>window.location.href ='add-notice.php'</script>";
                       <div class="form-group">
                         <label for="exampleInputEmail3">Notice For</label>
                         <select  name="classid" class="form-control" required='true'>
-                          <option value="">Select Immunization Vaccine</option>
+                          <option value="">Select Class</option>
                          <?php 
 
 $sql2 = "SELECT * from    tblclass ";

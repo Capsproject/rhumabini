@@ -66,8 +66,8 @@ if($query->rowCount() > 0)
 {
 foreach($results as $row)
 {               ?>
- <tr align="center" class="table-warning">
-<td colspan="4" style="font-size:20px;color:blue">
+ <tr align="center" class="table-primary">
+<td colspan="4" style="font-size:20px;color:Black">
  Notice</td></tr>
 <tr class="table-info">
     <th>Notice Announced Date</th>
