@@ -225,7 +225,7 @@ span.glyphicon.glyphicon-search.edit {
     background: url(../images/yw.png);
     background-size: cover;
     background-repeat: no-repeat;
-	height: 100vh;
+	height: 100vh !important;
     background-size: 100% 100%;
     padding-top: 0em !important;
     text-align: center;
@@ -1513,8 +1513,7 @@ ul.p_n-list li a:hover{
 	    padding: 15.5% 0 0;
 	}
 	.banner {
-	        min-height: 618px;
-			min-width: 980px;
+		
 	}
 	.grid li {
 	    width: 311px;
