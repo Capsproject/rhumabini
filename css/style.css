@@ -1528,7 +1528,6 @@ ul.p_n-list li a:hover{
 	    font-size: 1.1em;
 	}
 	.banner5 {
-	    min-height:600px;
 		min-width: fit-content;
 	}
 	.abt-info-pic h3 {
@@ -1843,9 +1842,7 @@ ul.p_n-list li a:hover{
 	.rslides h3 {
 	    margin-top: 1em;
 	}
-	.banner5 {
-	    min-height: 83px;
-	}
+	
 	.welcome-grid {
 	    width: 50%;
 	    float: left;
@@ -2163,9 +2160,7 @@ ul.p_n-list li a:hover{
 	.banner {
 	    min-height: 345px;
 	}
-	.banner5 {
-	    min-height: 83px;
-	}
+	
 	.testimonial-grid p {
 	    font-size: .9em;
 	}
@@ -2190,9 +2185,7 @@ ul.p_n-list li a:hover{
 	.view h3 {
 	       padding: 27px 0 10px;
 	}
-	.banner5 {
-	    min-height: 83px;
-	}
+	
 	.banner5 h2 {
 	       font-size: 2.1em;
     padding-top: 26px;
