@@ -18,9 +18,7 @@ git checkout develop
 git checkout -b 'name ng branch mo'
 ```
 ### Reminder
-Change Document root when your coding change it with your folder name
-![image](https://github.com/Capsproject/joberfied/assets/102800815/ea56791f-32a4-40c3-9083-66aa5f1bf811)
-
+## Make sure sa lahat ng file na may connection db
 Change credentials of your database make it credentials of your database on your laptop or pc
 ![image](https://github.com/Capsproject/joberfied/assets/102800815/34e20e6f-e3d5-4759-8c01-1d21328a11de)
 
