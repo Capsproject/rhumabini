@@ -71,7 +71,7 @@ echo "<script>alert('Invalid Details');</script>";
                 </div>
                 <h4>ADMIN</h4>
                 <h6 class="font-weight-light">Sign in to continue.</h6>
-                <form class="pt-3" id="login" method="post" name="login">
+                <form class="pt-3" action="login.php" id="login" method="post" name="login">
                   <div class="form-group">
                     <input type="text" class="form-control form-control-lg" placeholder="enter your username" required="true" name="username" value="<?php if(isset($_COOKIE["user_login"])) { echo $_COOKIE["user_login"]; } ?>" >
                   </div>
