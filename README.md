@@ -1,7 +1,7 @@
 # RHUMABINI
 ## If your first time to code you need first clone this repo
 ```
-git clone https://github.com/Capsproject/joberfied.git
+git clone https://github.com/Capsproject/rhumabini.git
 ```
 
 ## Then make your own branch
