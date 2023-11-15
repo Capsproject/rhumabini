@@ -19,7 +19,7 @@ $query->bindParam(':eid',$eid,PDO::PARAM_STR);
  $query->execute();
   echo '<script>alert("Class has been updated")</script>';
 }
-
+  }
   ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -80,7 +80,7 @@ $cnt=1;
 if($query->rowCount() > 0)
 {
 foreach($results as $row)
-{               ?>  
+{        }       ?>  
                       <div class="form-group">
                         <label for="exampleInputName1">Immunization Vaccine Name</label>
                         <input type="text" name="cname" value="<?php  echo htmlentities($row->ClassName);?>" class="form-control" required='true'>
