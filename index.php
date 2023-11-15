@@ -21,7 +21,7 @@ include('includes/dbconnection.php');
 <link href='//fonts.googleapis.com/css?family=Open+Sans:300,300italic,400italic,400,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!--/fonts-->
 <!--hover-girds-->
-<link rel="shortcut icon" href="images/download.jpg" type="image/x-icon">
+<link rel="shortcut icon" href="images/iconhuhu.png" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="css/default.css" />
 <link rel="stylesheet" type="text/css" href="css/component.css" />
 <script src="js/modernizr.custom.js"></script>
