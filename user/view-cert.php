@@ -36,7 +36,7 @@ if (strlen($_SESSION['sturecmsstuid']) == 0) {
     <!-- inject:css -->
     <!-- endinject -->
     <!-- Layout styles -->
-    <link rel="shortcut icon" href="images/iconhuhu.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/iconhuhu.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <!-- End layout styles -->
     <style>

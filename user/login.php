@@ -58,7 +58,7 @@ echo "<script>alert('Invalid Details');</script>";
     <!-- inject:css -->
     <!-- endinject -->
     <!-- Layout styles -->
-    <link rel="shortcut icon" href="images/iconhuhu.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/iconhuhu.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
    
   </head>
