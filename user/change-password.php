@@ -52,7 +52,7 @@ echo '<script>alert("Your current password is wrong")</script>';
     <!-- inject:css -->
     <!-- endinject -->
     <!-- Layout styles -->
-    <link rel="shortcut icon" href="images/iconhuhu.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/iconhuhu.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css" />
     <script type="text/javascript">
 function checkpass()

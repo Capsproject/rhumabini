@@ -34,7 +34,7 @@ echo "<script>alert('Email id or Mobile no is invalid');</script>";
 <html lang="en">
   <head>
   
-    <title>Student  Management System|| Student Forgot Password</title>
+    <title>RHU Management System|| Student Forgot Password</title>
     <!-- plugins:css -->
   
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
@@ -46,7 +46,7 @@ echo "<script>alert('Email id or Mobile no is invalid');</script>";
     <!-- inject:css -->
     <!-- endinject -->
     <!-- Layout styles -->
-    <link rel="shortcut icon" href="images/iconhuhu.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/iconhuhu.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
    <script type="text/javascript">
 function valid()
