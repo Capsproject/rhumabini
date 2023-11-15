@@ -22,6 +22,7 @@ include('includes/dbconnection.php');
 <!--/fonts-->
 <!--hover-girds-->
 <link rel="shortcut icon" href="img/download.jpg" type="image/x-icon">
+<link rel="shortcut icon" href="img/download.jpg" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="css/default.css" />
 <link rel="stylesheet" type="text/css" href="css/component.css" />
 <script src="js/modernizr.custom.js"></script>
