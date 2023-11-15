@@ -13,7 +13,7 @@ if (strlen($_SESSION['sturecmsaid']==0)) {
    
     <title>RHU  Management System|| Between Dates Reports</title>
     <!-- plugins:css -->
-    <link rel="shortcut icon" href="images/iconhuhu.png" type="image/x-icon">
+    
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
@@ -25,6 +25,7 @@ if (strlen($_SESSION['sturecmsaid']==0)) {
     <!-- inject:css -->
     <!-- endinject -->
     <!-- Layout styles -->
+    <link rel="shortcut icon" href="/imahe/ut.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css" />
     
   </head>
