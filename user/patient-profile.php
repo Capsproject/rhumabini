@@ -85,7 +85,7 @@ foreach($results as $row)
   <tr class="table-info">
     <th>Date of Birth</th>
     <td><?php  echo $row->DOB;?></td>
-    <th>Doses</th>
+    <th>Patient ID</th>
     <td><?php  echo $row->StuID;?></td>
   </tr>
   <tr class="table-info">
