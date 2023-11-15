@@ -29,6 +29,7 @@ if (strlen($_SESSION['sturecmsstuid']) == 0) {
     <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
+    <link rel="shortcut icon" href="images/iconhuhu.png" type="image/x-icon">
     <link rel="stylesheet" href="./vendors/daterangepicker/daterangepicker.css">
     <link rel="stylesheet" href="./vendors/chartist/chartist.min.css">
     <!-- End plugin css for this page -->

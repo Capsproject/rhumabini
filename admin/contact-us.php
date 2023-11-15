@@ -32,6 +32,7 @@ echo '<script>alert("Contact us has been updated")</script>';
    
     <title>RHU  Management System|| Update Contact Us</title>
     <!-- plugins:css -->
+    <link rel="shortcut icon" href="images/iconhuhu.png" type="image/x-icon">
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">

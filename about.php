@@ -18,6 +18,7 @@ include('includes/dbconnection.php');
 <script src="js/bootstrap.js"></script>
 <!-- /js -->
 <!--fonts-->
+<link rel="shortcut icon" href="images/iconhuhu.png" type="image/x-icon">
 <link href='//fonts.googleapis.com/css?family=Open+Sans:300,300italic,400italic,400,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!--/fonts-->
 <script type="text/javascript" src="js/move-top.js"></script>

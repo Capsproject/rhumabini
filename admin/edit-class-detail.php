@@ -27,6 +27,7 @@ $query->bindParam(':eid',$eid,PDO::PARAM_STR);
    
     <title>RHU  Management System|| Manage Class</title>
     <!-- plugins:css -->
+    <link rel="shortcut icon" href="images/iconhuhu.png" type="image/x-icon">
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
@@ -84,18 +85,7 @@ foreach($results as $row)
                         <label for="exampleInputName1">Immunization Vaccine Name</label>
                         <input type="text" name="cname" value="<?php  echo htmlentities($row->ClassName);?>" class="form-control" required='true'>
                       </div>
-                      <div class="form-group">
-                        <label for="exampleInputEmail3">Section</label>
-                        <select  name="section" class="form-control" required='true'>
-                          <option value="<?php  echo htmlentities($row->Section);?>"><?php  echo htmlentities($row->Section);?></option>
-                          <option value="A">b</option>
-                          <option value="B">B</option>
-                          <option value="C">C</option>
-                          <option value="D">D</option>
-                          <option value="E">E</option>
-                          <option value="F">F</option>
-                        </select>
-                      </div><?php $cnt=$cnt+1;}} ?>
+
                       <button type="submit" class="btn btn-primary mr-2" name="submit">Update</button>
                      
                     </form>

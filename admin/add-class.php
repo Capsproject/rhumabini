@@ -31,6 +31,7 @@ echo "<script>window.location.href ='add-class.php'</script>";
    
     <title>RHU  Management System|| Add Class</title>
     <!-- plugins:css -->
+    <link rel="shortcut icon" href="images/iconhuhu.png" type="image/x-icon">
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
@@ -78,18 +79,7 @@ echo "<script>window.location.href ='add-class.php'</script>";
                         <label for="exampleInputName1">Class Name</label>
                         <input type="text" name="cname" value="" class="form-control" required='true'>
                       </div>
-                      <div class="form-group">
-                        <label for="exampleInputEmail3">Section</label>
-                        <select  name="section" class="form-control" required='true'>
-                          <option value="">Choose Section</option>
-                          <option value="A">A</option>
-                          <option value="B">B</option>
-                          <option value="C">C</option>
-                          <option value="D">D</option>
-                          <option value="E">E</option>
-                          <option value="F">F</option>
-                        </select>
-                      </div>
+                   
                       <button type="submit" class="btn btn-primary mr-2" name="submit">Add</button>
                      
                     </form>

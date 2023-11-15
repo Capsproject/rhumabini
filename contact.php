@@ -20,6 +20,7 @@ include('includes/dbconnection.php');
 <!--fonts-->
 <link href='//fonts.googleapis.com/css?family=Open+Sans:300,300italic,400italic,400,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!--/fonts-->
+<link rel="shortcut icon" href="images/iconhuhu.png" type="image/x-icon">
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <!--script-->
