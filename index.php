@@ -25,7 +25,7 @@ include('includes/dbconnection.php');
 <link rel="stylesheet" type="text/css" href="css/default.css" />
 <link rel="stylesheet" type="text/css" href="css/component.css" />
 <script src="js/modernizr.custom.js"></script>
-<!--/hover-grids-->
+<!-x-/hover-grids-->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <!--script-->
