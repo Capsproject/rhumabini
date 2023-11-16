@@ -39,7 +39,7 @@ echo '<script>alert("Your current password is wrong")</script>';
    
     <title>RHU  Management System|| Change Password</title>
     <!-- plugins:css -->
-    <link rel="shortcut icon" href="images/iconhuhu.png" type="image/x-icon">
+   
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
@@ -51,6 +51,7 @@ echo '<script>alert("Your current password is wrong")</script>';
     <!-- inject:css -->
     <!-- endinject -->
     <!-- Layout styles -->
+    <link rel="shortcut icon" href="/imahe/ut.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css" />
     <script type="text/javascript">
 function checkpass()

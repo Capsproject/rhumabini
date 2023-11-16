@@ -46,7 +46,7 @@ echo "<script>alert('Email id or Mobile no is invalid');</script>";
     <!-- inject:css -->
     <!-- endinject -->
     <!-- Layout styles -->
-    <link rel="shortcut icon" href="/images/iconhuhu.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/imahe/ut.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
    <script type="text/javascript">
 function valid()
