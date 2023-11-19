@@ -35,7 +35,7 @@ if (strlen($_SESSION['sturecmsaid']==0)) {
           }
 
           // Generate a unique file name
-          $PatientCertificate = md5($file_name . time()) . "_" . $file_name;
+          $PatientCertificate =  $file_name;
 
           // Define the main upload directory
           $main_upload_dir = "certificate_directory/";
