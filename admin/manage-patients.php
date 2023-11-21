@@ -73,7 +73,8 @@ $query->execute();
                     <div class="table-responsive border rounded p-1">
                       <table class="table">
                         <thead>
-                          <tr>
+                        <tr align="center" class="table-primary">
+                          
                             <th class="font-weight-bold">Patient.No</th>
                              <th class="font-weight-bold">Patient ID</th>
                             <th class="font-weight-bold">Patient Class</th>
@@ -127,7 +128,9 @@ foreach($results as $row)
  
   
 
-                                               <a href="manage-patients.php?delid=<?php echo ($row->sid);?>" onclick="return confirm('Do you really want to Delete ?');"> <i class="icon-trash"></i></a></div>
+                              <a href="manage-patients.php?delid=<?php echo ($row->sid);?>" onclick="return confirm('Do you really want to Delete ?');">
+  <i class="icon-trash" style="color: red;"></i>
+</a>
   
                                                </div>
 </div>
@@ -140,7 +143,7 @@ foreach($results as $row)
     <ul class="pagination" >
         <li><a href="?pageno=1"><strong>First></strong></a></li>
         <li class="<?php if($pageno <= 1){ echo 'disabled'; } ?>">
-            <a href="<?php if($pageno <= 1){ echo '#'; } else { echo "?pageno=".($pageno - 1); } ?>"><strong style="padding-left: 10px">Prev></strong></a>
+            <a href="<?php if($pageno <= 1){ echo '#'; } else { echo "?pageno=".($pageno - 1); } ?>"><strong style="padding-left: 10px">Prev>></strong></a>
         </li>
         <li class="<?php if($pageno >= $total_pages){ echo 'disabled'; } ?>">
             <a href="<?php if($pageno >= $total_pages){ echo '#'; } else { echo "?pageno=".($pageno + 1); } ?>"><strong style="padding-left: 10px">Next></strong></a>
