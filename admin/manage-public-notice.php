@@ -71,15 +71,17 @@ $query->execute();
                       <a href="#" class="text-dark ml-auto mb-3 mb-sm-0"> View all Public Notice</a>
                     </div>
                     <div class="table-responsive border rounded p-1">
+                    
                       <table class="table">
                         <thead>
-                          <tr>
+                        <tr align="center" class="table-primary">
+                         
                             <th class="font-weight-bold">P.No</th>
                             <th class="font-weight-bold">Notice Title</th>
                             <th class="font-weight-bold">Notice Date</th>
                             <th class="font-weight-bold">Action</th>
-                            
-                          </tr>
+                            </tr>
+                         
                         </thead>
                         <tbody>
                            <?php

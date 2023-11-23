@@ -73,7 +73,8 @@ $query->execute();
                     <div class="table-responsive border rounded p-1">
                       <table class="table">
                         <thead>
-                          <tr>
+                        <tr align="center" class="table-primary">
+                          
                             <th class="font-weight-bold">P.No</th>
                             <th class="font-weight-bold">Notice Title</th>
                             <th class="font-weight-bold">Immunization Vaccine</th>
