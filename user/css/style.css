@@ -12568,12 +12568,14 @@ dl {
     -moz-transition: width 0.25s ease;
     -ms-transition: width 0.25s ease;
     color: #111111;
+    
     padding-left: 24px;
     padding-right: 24px;
     width: calc(100% - 240px);
     height: 70px;
     -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.11);
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.11); }
+    
     @media (max-width: 991px) {
       .navbar .navbar-menu-wrapper {
         width: auto;
@@ -12868,7 +12870,7 @@ dl {
           font-family: "Open Sans", sans-serif;
           font-weight: 600; }
         .sidebar .nav .nav-item.active:not(.navbar-brand-mini-wrapper) > .nav-link i {
-          color: #38ce3c; }
+          color: #1f00e9 !important; }
       .sidebar .nav .nav-item:not(.nav-category):hover {
         background: #2c2c43; }
       .sidebar .nav .nav-item.nav-profile {
@@ -12929,8 +12931,8 @@ dl {
               transform: none;
               color: #626262; }
       .sidebar .nav .nav-item.nav-category {
-        color: #38ce3c;
-        font-size: 13px;
+        color: #00BFE9 !important;
+        font-size: 23px;
         font-weight: 700;
         text-transform: uppercase; }
         .sidebar .nav .nav-item.nav-category .nav-link {
