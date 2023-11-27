@@ -2,8 +2,12 @@
   .yown {
     height: 80px;
     position: absolute;
+  
+  .table-primary {
+    background-color: #15007b;
     
   }
+
 </style>
  
  <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -28,13 +32,14 @@ if($query->rowCount() > 0)
 {
 foreach($results as $row)
 {               ?>
-        <div class="navbar-menu-wrapper d-flex align-items-center flex-grow-1">
+  
+        <div class="navbar-menu-wrapper  d-flex align-items-center flex-grow-1">
               
   
         <img class="yown" src="/images/bluelogo.png"  alt="" style="left: 1px; ">
-         
+      
           <ul class="navbar-nav navbar-nav-right ml-auto">
-       
+        
       
             <li class="nav-item dropdown d-none d-xl-inline-flex user-dropdown">
               <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
@@ -55,5 +60,6 @@ foreach($results as $row)
           <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
             <span class="icon-menu"></span>
           </button>
+
         </div>
       </nav>
