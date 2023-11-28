@@ -70,7 +70,7 @@ $query->execute();
                                 <div class="form-group">
                                    <strong>Search Patient:</strong>
                                    
-                                    <input id="searchdata" type="text" name="searchdata" required="true" class="form-control" placeholder="Search by Patient ID"></div>
+                                    <input id="searchdata" type="text" name="searchdata" required="true" class="form-control" placeholder="Search Patient Name"></div>
                                
                                 <button type="submit" class="btn btn-primary" name="search" id="submit">Search</button>
                             </form>
