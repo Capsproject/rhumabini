@@ -1,3 +1,46 @@
+<style>
+.border-left-primary {
+  border-left: 0.25rem solid #4e73df !important;
+}
+
+
+.border-left-success {
+  border-left: 0.25rem solid #1cc88a !important;
+}
+
+.border-left-info {
+  border-left: 0.25rem solid #36b9cc !important;
+}
+
+.border-left-warning {
+  border-left: 0.25rem solid #f6c23e !important;
+}
+
+.border-left-danger {
+  border-left: 0.25rem solid #e74a3b !important;
+}
+
+.border-bottom-primary {
+  border-bottom: 0.25rem solid #4e73df !important;
+}
+
+.border-bottom-success {
+  border-bottom: 0.25rem solid #1cc88a !important;
+}
+
+.border-bottom-info {
+  border-bottom: 0.25rem solid #36b9cc !important;
+}
+
+.border-bottom-warning {
+  border-bottom: 0.25rem solid #f6c23e !important;
+}
+
+.border-bottom-danger {
+  border-bottom: 0.25rem solid #e74a3b !important;
+}
+  </style>
+
 <?php
 session_start();
 //error_reporting(0);
@@ -53,7 +96,7 @@ if (strlen($_SESSION['sturecmsaid']==0)) {
                       </div>
                     </div>
                     <div class="row report-inner-cards-wrapper">
-                      <div class=" col-md -6 col-xl report-inner-card">
+                      <div class=" col-md -6 col-xl report-inner-card  shadow h-100 py-2">
                         <div class="inner-card-text">
                            <?php 
                         $sql1 ="SELECT * from  tblclass";
@@ -70,7 +113,7 @@ $totclass=$query1->rowCount();
                           <i class="icon-rocket"></i>
                         </div>
                       </div>
-                      <div class="col-md-6 col-xl report-inner-card">
+                      <div class="col-md -6 col-xl report-inner-card shadow h-100 py-2">
                         <div class="inner-card-text">
                           <?php 
                         $sql2 ="SELECT * from  tblstudent";
@@ -87,7 +130,7 @@ $totstu=$query2->rowCount();
                           <i class="icon-user"></i>
                         </div>
                       </div>
-                      <div class="col-md-6 col-xl report-inner-card">
+                      <div class="col-md -6 col-xl report-inner-card  shadow h-100 py-2">
                         <div class="inner-card-text">
                           <?php 
                         $sql3 ="SELECT * from  tblnotice";
@@ -104,7 +147,7 @@ $totnotice=$query3->rowCount();
                           <i class="icon-doc"></i>
                         </div>
                       </div>
-                      <div class="col-md-6 col-xl report-inner-card">
+                      <div class="col-md -6 col-xl report-inner-card shadow h-100 py-2">
                         <div class="inner-card-text">
                           <?php 
                         $sql4 ="SELECT * from  tblpublicnotice";
@@ -122,6 +165,149 @@ $totpublicnotice=$query4->rowCount();
                         </div>
                       </div>
                     </div>
+                    <div class="row report-inner-cards-wrapper">
+                      <div class=" col-md -6 col-xl report-inner-card border-left-primary shadow h-100 py-2">
+                        <div class="inner-card-body">
+                        <?php
+$specificClassId = 1; // Class ID for Hepatitis B
+
+$sql = "SELECT * FROM tblstudent WHERE studentclass = :classId";
+$query = $dbh->prepare($sql);
+$query->bindParam(':classId', $specificClassId, PDO::PARAM_INT);
+$query->execute();
+$results = $query->fetchAll(PDO::FETCH_OBJ);
+$numberOfStudentsInClass = $query->rowCount();
+?>
+
+        <span class="report-title">Total Registered in BCG</span>
+        <h4><?php echo htmlentities($numberOfStudentsInClass); ?></h4>
+    </div>
+   
+</div>
+</div>
+<div class="row report-inner-cards-wrapper">
+                      <div class=" col-md -6 col-xl report-inner-card border-left-warning shadow h-100 py-2">
+                        <div class="inner-card-body">
+                        <?php
+$specificClassId = 2; // Class ID for Hepatitis B
+
+$sql = "SELECT * FROM tblstudent WHERE studentclass = :classId";
+$query = $dbh->prepare($sql);
+$query->bindParam(':classId', $specificClassId, PDO::PARAM_INT);
+$query->execute();
+$results = $query->fetchAll(PDO::FETCH_OBJ);
+$numberOfStudentsInClass = $query->rowCount();
+?>
+
+        <span class="report-title">Total Registered in Hepatitis B </span>
+        <h4><?php echo htmlentities($numberOfStudentsInClass); ?></h4>
+    </div>
+   
+</div>
+</div>
+<div class="row report-inner-cards-wrapper">
+                      <div class=" col-md -6 col-xl report-inner-card border-left-success shadow h-100 py-2">
+                        <div class="inner-card-body">
+                        <?php
+$specificClassId = 3; // Class ID for Hepatitis B
+
+$sql = "SELECT * FROM tblstudent WHERE studentclass = :classId";
+$query = $dbh->prepare($sql);
+$query->bindParam(':classId', $specificClassId, PDO::PARAM_INT);
+$query->execute();
+$results = $query->fetchAll(PDO::FETCH_OBJ);
+$numberOfStudentsInClass = $query->rowCount();
+?>
+
+        <span class="report-title">Total Registered in Pentavalent Vaccine </span>
+        <h4><?php echo htmlentities($numberOfStudentsInClass); ?></h4>
+    </div>
+   
+</div>
+</div>
+<div class="row report-inner-cards-wrapper">
+                      <div class=" col-md -6 col-xl report-inner-card  border-left-danger shadow h-100 py-2">
+                        <div class="inner-card-body">
+                        <?php
+$specificClassId = 4; // Class ID for Hepatitis B
+
+$sql = "SELECT * FROM tblstudent WHERE studentclass = :classId";
+$query = $dbh->prepare($sql);
+$query->bindParam(':classId', $specificClassId, PDO::PARAM_INT);
+$query->execute();
+$results = $query->fetchAll(PDO::FETCH_OBJ);
+$numberOfStudentsInClass = $query->rowCount();
+?>
+
+        <span class="report-title">Total Registered in Oral Polio Vaccine </span>
+        <h4><?php echo htmlentities($numberOfStudentsInClass); ?></h4>
+    </div>
+   
+</div>
+</div>
+<div class="row report-inner-cards-wrapper">
+                      <div class=" col-md -6 col-xl report-inner-card border-left-info shadow h-100 py-2">
+                        <div class="inner-card-body">
+                        <?php
+$specificClassId = 5; // Class ID for Hepatitis B
+
+$sql = "SELECT * FROM tblstudent WHERE studentclass = :classId";
+$query = $dbh->prepare($sql);
+$query->bindParam(':classId', $specificClassId, PDO::PARAM_INT);
+$query->execute();
+$results = $query->fetchAll(PDO::FETCH_OBJ);
+$numberOfStudentsInClass = $query->rowCount();
+?>
+
+        <span class="report-title">Total Registered in Inactivated Polio Vaccine </span>
+        <h4><?php echo htmlentities($numberOfStudentsInClass); ?></h4>
+    </div>
+   
+</div>
+</div>
+<div class="row report-inner-cards-wrapper">
+                      <div class=" col-md -6 col-xl report-inner-card border-left-warning shadow h-100 py-2">
+                        <div class="inner-card-body">
+                        <?php
+$specificClassId = 6; // Class ID for Hepatitis B
+
+$sql = "SELECT * FROM tblstudent WHERE studentclass = :classId";
+$query = $dbh->prepare($sql);
+$query->bindParam(':classId', $specificClassId, PDO::PARAM_INT);
+$query->execute();
+$results = $query->fetchAll(PDO::FETCH_OBJ);
+$numberOfStudentsInClass = $query->rowCount();
+?>
+
+        <span class="report-title">Total Registered in Pneumococcal Conjugate Vaccine
+</span>
+        <h4><?php echo htmlentities($numberOfStudentsInClass); ?></h4>
+    </div>
+    
+</div>
+</div>
+<div class="row report-inner-cards-wrapper">
+                      <div class=" col-md -6 col-xl report-inner-card border-left-primary shadow h-100 py-2">
+                        <div class="inner-card-body">
+                        <?php
+$specificClassId = 7; // Class ID for Hepatitis B
+
+$sql = "SELECT * FROM tblstudent WHERE studentclass = :classId";
+$query = $dbh->prepare($sql);
+$query->bindParam(':classId', $specificClassId, PDO::PARAM_INT);
+$query->execute();
+$results = $query->fetchAll(PDO::FETCH_OBJ);
+$numberOfStudentsInClass = $query->rowCount();
+?>
+
+        <span class="report-title">Total Registered in Measles, Mumps, Rubella</span>
+        <h4><?php echo htmlentities($numberOfStudentsInClass); ?></h4>
+    </div>
+    
+</div>
+
+
+                    
                   </div>
                 </div>
               </div>
