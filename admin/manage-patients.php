@@ -120,7 +120,7 @@ $query->execute();
                             <th class="font-weight-bold shadow h-100 py-3 ">Patient Name</th>
                             <th class="font-weight-bold shadow h-100 py-3">Patient Email</th>
                             <th class="font-weight-bold shadow h-100 py-3">Patient Certificate</th>
-                            <th class="font-weight-bold shadow h-100 py-3">Admissin Date</th>
+                            <th class="font-weight-bold shadow h-100 py-3">Admission Date</th>
                             <th class="font-weight-bold shadow h-100 py-3">Action</th>
                             
                           </tr>
