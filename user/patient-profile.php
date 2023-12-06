@@ -1,3 +1,9 @@
+<style>
+.taba {
+  background-color: #0065e9 !important;
+	
+}
+  </style>
 <?php
 session_start();
 //error_reporting(0);
@@ -68,7 +74,7 @@ if($query->rowCount() > 0)
 {
 foreach($results as $row)
 {               ?>
- <tr align="center" class="table-primary">
+ <tr align="center" class="taba shadow h-100 py-2">
 <td colspan="4" style="font-size:25px;color:black">
  Patient Details</td></tr>
 
