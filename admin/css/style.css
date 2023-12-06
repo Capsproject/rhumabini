@@ -12905,7 +12905,7 @@ dl {
               transform: none;
               color: #626262; }
       .sidebar .nav .nav-item.nav-category {
-        color: #00BFE9 !important; 
+        color:#0065e9 !important; 
         font-size: 23px;
         font-weight: 700;
         text-transform: uppercase; }
