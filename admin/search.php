@@ -40,7 +40,40 @@ $query->execute();
     <link rel="shortcut icon" href="/imahe/ut.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <!-- End layout styles -->
-   
+    <style>
+      table {
+        border-collapse: separate;
+        border-spacing: 0 8px; /* Adjust the spacing between rows */
+        width: 100%;
+      }
+      .font-weight-bold {
+        font-family: 'Roboto', sans-serif; /* Change 'Roboto' to your preferred font */
+        font-size: 40px; /* Adjust the font size */
+        font-weight: bold;
+        color:white; /* Adjust the font color */
+        margin-bottom: 10px;
+      }
+      th,
+      td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        border-radius: 10px; /* Add rounded corners */
+      }
+
+      th {
+        background-color: #0065e9;
+        color: #fff;
+      }
+
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+
+      .pagination {
+        margin-top: 20px;
+      }
+    </style>
   </head>
   <body>
     <div class="container-scroller">
@@ -58,7 +91,7 @@ $query->execute();
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"> Search Patient ID</li>
+                  <li class="breadcrumb-item active" aria-current="page"> Search Patient </li>
                 </ol>
               </nav>
             </div>
@@ -87,17 +120,17 @@ $sdata=$_POST['searchdata'];
                     </div>
                     <div class="table-responsive border rounded p-1">
                       
-                      <table class="table">
-                        <thead>
+                      <table class="table shadow h-100 py-2">
+                        <thead class="shadow h-100 py-4">
                           <tr>
-                            <th class="font-weight-bold">P.No</th>
-                            <th class="font-weight-bold">Patient ID</th>
-                            <th class="font-weight-bold">Patient Immunization Vaccine</th>
-                            <th class="font-weight-bold">Patient Name</th>
-                            <th class="font-weight-bold">Patient Email</th>
-                            <th class="font-weight-bold">Patient Certificate</th>
-                            <th class="font-weight-bold">Admissin Date</th>
-                            <th class="font-weight-bold">Action</th>
+                            <th class="font-weight-bold shadow h-100 py-3">P.No</th>
+                            <th class="font-weight-bold shadow h-100 py-3">Patient ID</th>
+                            <th class="font-weight-bold shadow h-100 py-3">Patient Immunization Vaccine</th>
+                            <th class="font-weight-bold shadow h-100 py-3 ">Patient Name</th>
+                            <th class="font-weight-bold shadow h-100 py-3">Patient Email</th>
+                            <th class="font-weight-bold shadow h-100 py-3">Patient Certificate</th>
+                            <th class="font-weight-bold shadow h-100 py-3">Admission Date</th>
+                            <th class="font-weight-bold shadow h-100 py-3">Action</th>
                             
                           </tr>
                         </thead>
@@ -128,17 +161,17 @@ if($query->rowCount() > 0)
 foreach($results as $row)
 {               ?>   
                           <tr>
-                           
-                            <td><?php echo htmlentities($cnt);?></td>
-                            <td><?php  echo htmlentities($row->StuID);?></td>
-                            <td><?php  echo htmlentities($row->ClassName);?> <?php  echo htmlentities($row->Section);?></td>
-                            <td><?php  echo htmlentities($row->StudentName);?></td>
-                            <td><?php  echo htmlentities($row->StudentEmail);?></td>
-                            <td><?php  echo htmlentities($row->PatientCertificate);?></td>
-                            <td><?php  echo htmlentities($row->DateofAdmission);?></td>
-                            <td>
-                              <div><a href="edit-patients-detail.php?editid=<?php echo htmlentities ($row->sid);?>"><i class="icon-eye"></i></a>
-                                                || <a href="manage-patients.php?delid=<?php echo ($row->sid);?>" onclick="return confirm('Do you really want to Delete ?');"> <i class="icon-trash"></i></a></div>
+                             
+                          <td class="shadow h-100 py-4"><?php echo htmlentities($cnt);?></td>
+                            <td  class="shadow h-100 py-4"><?php  echo htmlentities($row->StuID);?></td>
+                            <td  class="shadow h-100 py-4"><?php  echo htmlentities($row->ClassName);?> <?php  echo htmlentities($row->Section);?></td>
+                            <td  class="shadow h-100 py-4"><?php  echo htmlentities($row->StudentName);?></td>
+                            <td  class="shadow h-100 py-4"><?php  echo htmlentities($row->StudentEmail);?></td>
+                            <td  class="shadow h-100 py-4"><?php  echo htmlentities($row->PatientCertificate);?></td>
+                            <td  class="shadow h-100 py-4"><?php  echo htmlentities($row->DateofAdmission);?></td>
+                            <td  class="shadow h-100 py-4">
+                              <div><a href="edit-patients-detail.php?editid=<?php echo htmlentities ($row->sid);?>"><i class="icon-eye" style="color: #007bff; font-size: 20px; text-decoration: none;"></i></a>
+                                                || <a href="manage-patients.php?delid=<?php echo ($row->sid);?>" onclick="return confirm('Do you really want to Delete ?');"> <i class="icon-trash" style="color: red; font-size: 20px; text-decoration: none;"></i></a></div>
                             </td> 
                           </tr><?php 
 $cnt=$cnt+1;

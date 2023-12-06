@@ -116,10 +116,10 @@ $query->execute();
                         <thead>
                         <tr  class="taba shadow h-100 py-2">
                          
-                            <th class="font-weight-bold">P.No</th>
-                            <th class="font-weight-bold">Notice Title</th>
-                            <th class="font-weight-bold">Notice Date</th>
-                            <th class="font-weight-bold">Action</th>
+                            <th class="font-weight-bold shadow h-100 py-3">P.No</th>
+                            <th class="font-weight-bold shadow h-100 py-3">Notice Title</th>
+                            <th class="font-weight-bold shadow h-100 py-3">Notice Date</th>
+                            <th class="font-weight-bold shadow h-100 py-3">Action</th>
                             </tr>
                          
                         </thead>
@@ -151,10 +151,10 @@ foreach($results as $row)
 {               ?>   
                           <tr>
                            
-                            <td><?php echo htmlentities($cnt);?></td>
-                            <td><?php  echo htmlentities($row->NoticeTitle);?></td>
-                            <td><?php  echo htmlentities($row->CreationDate);?></td>
-                            <td>
+                            <td class="shadow h-100 py-4"><?php echo htmlentities($cnt);?></td>
+                            <td class="shadow h-100 py-4"><?php  echo htmlentities($row->NoticeTitle);?></td>
+                            <td class="shadow h-100 py-4"><?php  echo htmlentities($row->CreationDate);?></td>
+                            <td class="shadow h-100 py-4">
                               <div><a href="edit-public-notice-detail.php?editid=<?php echo htmlentities ($row->ID);?>"><i class="icon-eye" style="color: #007bff; font-size: 20px; text-decoration: none;"></i></a>
                                                 || <a href="manage-public-notice.php?delid=<?php echo ($row->ID);?>" onclick="return confirm('Do you really want to Delete ?');"><i class="icon-trash" style="color: red; font-size: 20px; text-decoration: none;"></i></a></div>
                             </td> 

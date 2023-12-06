@@ -114,15 +114,14 @@ $query->execute();
                       <table class="table">
                         <thead class="shadow h-100 py-2">
                         <tr  class="taba ">
-                          
-                            <th class="font-weight-bold">Patient.No</th>
-                             <th class="font-weight-bold">Patient ID</th>
-                            <th class="font-weight-bold">Patient Class</th>
-                            <th class="font-weight-bold">Patient Name</th>
-                            <th class="font-weight-bold">Patient Email</th>
-                            <th class="font-weight-bold">Patient Certificate</th>
-                            <th class="font-weight-bold">Admissin Date</th>
-                            <th class="font-weight-bold">Action</th>
+                        <th class="font-weight-bold shadow h-100 py-3">P.No</th>
+                            <th class="font-weight-bold shadow h-100 py-3">Patient ID</th>
+                            <th class="font-weight-bold shadow h-100 py-3">Patient Immunization Vaccine</th>
+                            <th class="font-weight-bold shadow h-100 py-3 ">Patient Name</th>
+                            <th class="font-weight-bold shadow h-100 py-3">Patient Email</th>
+                            <th class="font-weight-bold shadow h-100 py-3">Patient Certificate</th>
+                            <th class="font-weight-bold shadow h-100 py-3">Admissin Date</th>
+                            <th class="font-weight-bold shadow h-100 py-3">Action</th>
                             
                           </tr>
                         </thead>
@@ -154,14 +153,14 @@ foreach($results as $row)
 {               ?>   
                           <tr>
                            
-                            <td><?php echo htmlentities($cnt);?></td>
-                            <td><?php  echo htmlentities($row->StuID);?></td>
-                            <td><?php  echo htmlentities($row->ClassName);?> <?php  echo htmlentities($row->Section);?></td>
-                            <td><?php  echo htmlentities($row->StudentName);?></td>
-                            <td><?php  echo htmlentities($row->StudentEmail);?></td>
-                            <td><?php  echo htmlentities($row->PatientCertificate);?></td>
-                            <td><?php  echo htmlentities($row->DateofAdmission);?></td>
-                            <td>
+                            <td class="shadow h-100 py-4"><?php echo htmlentities($cnt);?></td>
+                            <td  class="shadow h-100 py-4"><?php  echo htmlentities($row->StuID);?></td>
+                            <td  class="shadow h-100 py-4"><?php  echo htmlentities($row->ClassName);?> <?php  echo htmlentities($row->Section);?></td>
+                            <td  class="shadow h-100 py-4"><?php  echo htmlentities($row->StudentName);?></td>
+                            <td  class="shadow h-100 py-4"><?php  echo htmlentities($row->StudentEmail);?></td>
+                            <td  class="shadow h-100 py-4"><?php  echo htmlentities($row->PatientCertificate);?></td>
+                            <td  class="shadow h-100 py-4"><?php  echo htmlentities($row->DateofAdmission);?></td>
+                            <td  class="shadow h-100 py-4">
   <div>
     <a href="edit-patients-detail.php?editid=<?php echo htmlentities($row->sid);?>">
       <i class="icon-eye" style="color: #007bff; font-size: 20px; text-decoration: none;"></i>
