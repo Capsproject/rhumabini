@@ -71,7 +71,32 @@ if (strlen($_SESSION['sturecmsaid']==0)) {
     <link rel="shortcut icon" href="/imahe/ut.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <!-- End layout styles -->
-   
+    <style>
+      .report-inner-card {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        margin-bottom: 20px;
+      }
+
+      .report-inner-card .inner-card-body {
+        padding: 20px;
+      }
+
+      .report-title {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #495057;
+      }
+
+      .report-count {
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        color: #495057;
+      }
+    </style>
   </head>
   <body>
     <div class="container-scroller">

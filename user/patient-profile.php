@@ -33,7 +33,54 @@ if (strlen($_SESSION['sturecmsstuid']==0)) {
     <!-- Layout styles -->
     <link rel="shortcut icon" href="/imahe/ut.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css" />
-    
+    <style>
+      /* ... (Your existing styles) ... */
+
+      /* Stylish font for the patient name in the header */
+      .page-title {
+        font-family: 'Roboto', sans-serif; /* Change 'Roboto' to your preferred font */
+        font-size: 34px; /* Adjust the font size */
+        font-weight: bold;
+        color: #333; /* Adjust the font color */
+        margin-bottom: 10px;
+      }
+
+      /* Styling for the table */
+      .table {
+        border-collapse: separate;
+        border-spacing: 0;
+        width: 100%;
+        border-radius: 15px; /* Add rounded corners to the table */
+        overflow: hidden;
+      }
+
+      .table th,
+      .table td {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 5px solid #ddd;
+        
+      }
+
+      .table th {
+        background-color: #0065e9;
+        color: black;
+      }
+
+      .table tr:hover {
+        background-color: #f5f5f5;
+        border-radius: 15px;
+      }
+
+      /* Styling for the patient details rows */
+      .table-info th,
+      .table-info td {
+        background-color: #e6f7ff; /* Light blue background for patient details rows */
+      }
+    </style>
+
+    <!-- Include Google Fonts (Roboto in this case) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   </head>
   <body>
     <div class="container-scroller">
@@ -58,10 +105,10 @@ if (strlen($_SESSION['sturecmsstuid']==0)) {
             <div class="row">
           
               <div class="col-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
+                <div class="card ">
+                  <div class="card-body ">
                     
-                    <table border="1" class="table table-bordered mg-b-0">
+                    <table border="1" class="table table-bordered mg-b-0 shadow h-200 py-2">
                       <?php
 $sid=$_SESSION['sturecmsstuid'];
 $sql="SELECT tblstudent.StudentName,tblstudent.StudentEmail,tblstudent.StudentClass,tblstudent.Gender,tblstudent.DOB,tblstudent.StuID,tblstudent.FatherName,tblstudent.MotherName,tblstudent.ContactNumber,tblstudent.AltenateNumber,tblstudent.Address,tblstudent.UserName,tblstudent.Password,tblstudent.Image,tblstudent.DateofAdmission,tblclass.ClassName,tblclass.Section from tblstudent join tblclass on tblclass.ID=tblstudent.StudentClass where tblstudent.StuID=:sid";

@@ -1,10 +1,12 @@
 <style>
   .taba {
     background-color: #0065e9 !important;
+    
   }
 
   .notice-container {
-    margin-bottom: 20px;
+    margin-bottom: 80px;
+    
   }
 </style>
 
@@ -36,7 +38,34 @@ if (strlen($_SESSION['sturecmsstuid'] == 0)) {
     <!-- Layout styles -->
     <link rel="shortcut icon" href="/imahe/ut.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+    /* ... (Your existing styles) ... */
 
+    .taba {
+      background-color: #0065e9 !important;
+    }
+
+    .notice-container {
+      margin-bottom: 80px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    }
+
+    .notice-container table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+
+    
+
+   
+
+    .notice-container tr:hover {
+      background-color: #f5f5f5;
+    }
+  </style>
   </head>
 
   <body>
