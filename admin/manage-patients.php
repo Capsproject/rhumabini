@@ -47,7 +47,40 @@ $query->execute();
     <link rel="shortcut icon" href="/imahe/ut.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <!-- End layout styles -->
-   
+    <style>
+      table {
+        border-collapse: separate;
+        border-spacing: 0 8px; /* Adjust the spacing between rows */
+        width: 100%;
+      }
+      .font-weight-bold {
+        font-family: 'Roboto', sans-serif; /* Change 'Roboto' to your preferred font */
+        font-size: 40px; /* Adjust the font size */
+        font-weight: bold;
+        color:white; /* Adjust the font color */
+        margin-bottom: 10px;
+      }
+      th,
+      td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        border-radius: 10px; /* Add rounded corners */
+      }
+
+      th {
+        background-color: #0065e9;
+        color: #fff;
+      }
+
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+
+      .pagination {
+        margin-top: 20px;
+      }
+    </style>
   </head>
   <body>
     <div class="container-scroller">
@@ -75,12 +108,12 @@ $query->execute();
                   <div class="card-body">
                     <div class="d-sm-flex align-items-center mb-4">
                       <h4 class="card-title mb-sm-0">Manage Patients</h4>
-                      <a href="#" class="text-dark ml-auto mb-3 mb-sm-0"> View all Patients</a>
+
                     </div>
-                    <div class="table-responsive border rounded p-1">
+                    <div class="table-responsive border rounded p-1 ">
                       <table class="table">
-                        <thead>
-                        <tr  class="taba shadow h-100 py-2">
+                        <thead class="shadow h-100 py-2">
+                        <tr  class="taba ">
                           
                             <th class="font-weight-bold">Patient.No</th>
                              <th class="font-weight-bold">Patient ID</th>
@@ -93,7 +126,7 @@ $query->execute();
                             
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="shadow h-100 py-2" >
                            <?php
                             if (isset($_GET['pageno'])) {
             $pageno = $_GET['pageno'];
@@ -129,19 +162,15 @@ foreach($results as $row)
                             <td><?php  echo htmlentities($row->PatientCertificate);?></td>
                             <td><?php  echo htmlentities($row->DateofAdmission);?></td>
                             <td>
-                              <div><a href="edit-patients-detail.php?editid=<?php echo htmlentities ($row->sid);?>"><i class="icon-eye"></i></a> |
-                              
-                                            
- 
-  
-
-                              <a href="manage-patients.php?delid=<?php echo ($row->sid);?>" onclick="return confirm('Do you really want to Delete ?');">
-  <i class="icon-trash" style="color: red;"></i>
-</a>
-  
-                                               </div>
-</div>
-                            </td> 
+  <div>
+    <a href="edit-patients-detail.php?editid=<?php echo htmlentities($row->sid);?>">
+      <i class="icon-eye" style="color: #007bff; font-size: 20px; text-decoration: none;"></i>
+    </a> |
+    <a href="manage-patients.php?delid=<?php echo ($row->sid);?>" onclick="return confirm('Do you really want to Delete ?');">
+      <i class="icon-trash" style="color: red; font-size: 20px; text-decoration: none;"></i>
+    </a>
+  </div>
+</td>
                           </tr><?php $cnt=$cnt+1;}} ?>
                         </tbody>
                       </table>

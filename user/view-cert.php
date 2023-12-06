@@ -67,7 +67,12 @@ if (strlen($_SESSION['sturecmsstuid']) == 0) {
             padding: 20px;
             font-size: 50px;
         }
-
+        
+.taba {
+  background-color: #0065e9 !important;
+	
+}
+  
         .slider {
             background-color: #f0f0f0;
             padding: 20px;
@@ -110,33 +115,58 @@ if (strlen($_SESSION['sturecmsstuid']) == 0) {
             <?php include_once('includes/sidebar.php'); ?>
             <!-- partial -->
             <div class="main-panel">
-                <div class="content-wrapper">
-                    <div class="row purchace-popup">
-                        <div class="col-12 stretch-card grid-margin">
-                            <div class="card card-secondary">
-                                <span class="card-body d-lg-flex align-items-center">
-                                    <div class="container">
-                                        <div class="col-sm-12 slider">
-                                      
-  <i class="icon-doc"></i> </p>
-<?php
-if (!empty($row->PatientCertificate)) {
-    ?>
-    <h3>Download Certificate <a href="../admin/certificate_directory/<?php echo $row->PatientCertificate; ?>" download>Here</a></h3>
-    <?php
-} else {
-    ?>
-    <h3>No certificate uploaded yet</h3>
-    <?php
-}
-?>
-                                        </div>
-                                    </div>
-                                </span>
+    <div class="content-wrapper">
+        <div class="row purchace-popup">
+            <div class="col-12 stretch-card grid-margin">
+                <div class="card card-secondary">
+                    <div class="card-body d-lg-flex align-items-center">
+                        <div class="container">
+                            <div class="col-sm-12 slider">
+                                <table class="table table-bordered table-striped">
+                                    <thead class="taba">
+                                        <tr>
+                                            <th><strong style="font-size: larger;">File Name</strong></th>
+                                            <th><strong style="font-size: larger;">Download</strong></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <?php
+                                                if (!empty($row->PatientCertificate)) {
+                                                    echo $row->PatientCertificate; // Display the file name
+                                                } else {
+                                                    echo "No certificate uploaded yet";
+                                                }
+                                                ?>
+                                            </td>
+                                            <td>
+                                                <?php
+                                                if (!empty($row->PatientCertificate)) {
+                                                    ?>
+                                                    <a href="../admin/certificate_directory/<?php echo $row->PatientCertificate; ?>" download>
+                                                    <button class="btn btn-primary taba">Download</button>
+                                                    </a>
+                                                    <?php
+                                                } else {
+                                                    echo "N/A";
+                                                }
+                                                ?>
+                                            </td>
+                                        </tr>
+                                        <!-- You can add more rows for additional files -->
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
                 <!-- content-wrapper ends -->
                 <!-- partial:partials/_footer.html -->
                 <?php include_once('includes/footer.php'); ?>
