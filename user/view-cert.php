@@ -166,7 +166,11 @@ if (strlen($_SESSION['sturecmsstuid']) == 0) {
     </div>
 </div>
 
-
+</div>
+                </div>
+              </div>
+            </div>
+          </div>
                 <!-- content-wrapper ends -->
                 <!-- partial:partials/_footer.html -->
                 <?php include_once('includes/footer.php'); ?>
