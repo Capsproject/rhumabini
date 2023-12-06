@@ -123,7 +123,7 @@ foreach($results as $row)
                             <td><?php  echo htmlentities($row->CreationDate);?></td>
                             <td>
                               <div><a href="edit-public-notice-detail.php?editid=<?php echo htmlentities ($row->ID);?>"><i class="icon-eye"></i></a>
-                                                || <a href="manage-public-notice.php?delid=<?php echo ($row->ID);?>" onclick="return confirm('Do you really want to Delete ?');"> <i class="icon-trash"></i></a></div>
+                                                || <a href="manage-public-notice.php?delid=<?php echo ($row->ID);?>" onclick="return confirm('Do you really want to Delete ?');"> <i class="icon-trash" style="color: red;"></i></a></div>
                             </td> 
                           </tr><?php $cnt=$cnt+1;}} ?>
                         </tbody>
