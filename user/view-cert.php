@@ -131,15 +131,16 @@ if (strlen($_SESSION['sturecmsstuid']) == 0) {
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>
-                                                <?php
-                                                if (!empty($row->PatientCertificate)) {
-                                                    echo $row->PatientCertificate; // Display the file name
-                                                } else {
-                                                    echo "No certificate uploaded yet";
-                                                }
-                                                ?>
-                                            </td>
+                                        <td style="font-size: 30px;">
+    <?php
+    if (!empty($row->PatientCertificate)) {
+        echo $row->PatientCertificate; // Display the file name
+    } else {
+        echo "No certificate uploaded yet";
+    }
+    ?>
+</td>
+
                                             <td>
                                                 <?php
                                                 if (!empty($row->PatientCertificate)) {
