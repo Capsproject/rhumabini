@@ -46,7 +46,40 @@ $query->execute();
     <link rel="shortcut icon" href="/imahe/ut.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <!-- End layout styles -->
-   
+    <style>
+      table {
+        border-collapse: separate;
+        border-spacing: 0 8px; /* Adjust the spacing between rows */
+        width: 100%;
+      }
+      .font-weight-bold {
+        font-family: 'Roboto', sans-serif; /* Change 'Roboto' to your preferred font */
+        font-size: 40px; /* Adjust the font size */
+        font-weight: bold;
+        color:white; /* Adjust the font color */
+        margin-bottom: 10px;
+      }
+      th,
+      td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        border-radius: 10px; /* Add rounded corners */
+      }
+
+      th {
+        background-color: #0065e9;
+        color: #fff;
+      }
+
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+
+      .pagination {
+        margin-top: 20px;
+      }
+    </style>
   </head>
   <body>
     <div class="container-scroller">
@@ -116,13 +149,13 @@ foreach($results as $row)
 {               ?>   
                           <tr>
                            
-                            <td><?php echo htmlentities($cnt);?></td>
-                            <td><?php  echo htmlentities($row->ClassName);?></td>
-                            <td><?php  echo htmlentities($row->Section);?></td>
-                            <td><?php  echo htmlentities($row->CreationDate);?></td>
+                            <td class="shadow h-100 py-4"><?php echo htmlentities($cnt);?></td>
+                            <td class="shadow h-100 py-4"><?php  echo htmlentities($row->ClassName);?></td>
+                            <td class="shadow h-100 py-4"><?php  echo htmlentities($row->Section);?></td>
+                            <td class="shadow h-100 py-4"> <?php  echo htmlentities($row->CreationDate);?></td>
                             <td>
-                              <div><a href="edit-class-detail.php?editid=<?php echo htmlentities ($row->ID);?>"><i class="icon-eye"></i></a>
-                                                || <a href="manage-class.php?delid=<?php echo ($row->ID);?>" onclick="return confirm('Do you really want to Delete ?');"> <i class="icon-trash"></i></a></div>
+                              <div><a href="edit-class-detail.php?editid=<?php echo htmlentities ($row->ID);?>"><i class="icon-eye" style="color: #007bff; font-size: 20px; text-decoration: none;"></i></a>
+                                                | <a href="manage-class.php?delid=<?php echo ($row->ID);?>" onclick="return confirm('Do you really want to Delete ?');"> <i class="icon-trash" style="color: red; font-size: 20px; text-decoration: none;"></i></a></div>
                             </td> 
                           </tr><?php $cnt=$cnt+1;}} ?>
                         </tbody>
