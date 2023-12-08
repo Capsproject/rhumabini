@@ -156,7 +156,7 @@ foreach($results as $row)
                             <td class="shadow h-100 py-4"><?php  echo htmlentities($row->CreationDate);?></td>
                             <td class="shadow h-100 py-4">
                               <div><a href="edit-public-notice-detail.php?editid=<?php echo htmlentities ($row->ID);?>"><i class="icon-eye" style="color: #007bff; font-size: 20px; text-decoration: none;"></i></a>
-                                                || <a href="manage-public-notice.php?delid=<?php echo ($row->ID);?>" onclick="return confirm('Do you really want to Delete ?');"><i class="icon-trash" style="color: red; font-size: 20px; text-decoration: none;"></i></a></div>
+                                                | <a href="manage-public-notice.php?delid=<?php echo ($row->ID);?>" onclick="return confirm('Do you really want to Delete ?');"><i class="icon-trash" style="color: red; font-size: 20px; text-decoration: none;"></i></a></div>
                             </td> 
                           </tr><?php $cnt=$cnt+1;}} ?>
                         </tbody>

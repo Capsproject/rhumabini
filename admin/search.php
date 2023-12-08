@@ -171,7 +171,7 @@ foreach($results as $row)
                             <td  class="shadow h-100 py-4"><?php  echo htmlentities($row->DateofAdmission);?></td>
                             <td  class="shadow h-100 py-4">
                               <div><a href="edit-patients-detail.php?editid=<?php echo htmlentities ($row->sid);?>"><i class="icon-eye" style="color: #007bff; font-size: 20px; text-decoration: none;"></i></a>
-                                                || <a href="manage-patients.php?delid=<?php echo ($row->sid);?>" onclick="return confirm('Do you really want to Delete ?');"> <i class="icon-trash" style="color: red; font-size: 20px; text-decoration: none;"></i></a></div>
+                                                | <a href="manage-patients.php?delid=<?php echo ($row->sid);?>" onclick="return confirm('Do you really want to Delete ?');"> <i class="icon-trash" style="color: red; font-size: 20px; text-decoration: none;"></i></a></div>
                             </td> 
                           </tr><?php 
 $cnt=$cnt+1;
